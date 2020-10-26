@@ -3,4 +3,6 @@
     <string name="mulai_belanja">Mulai Belanja</string>
     <string name="simple_shoping_chart">Simple Shoping Chart</string>
     <string name="tentang_kami">Tentang Kami</string>
+    <string name="daftar_barang">Daftar Barang</string>
+    <string name="label_checkout">check out</string>
 </resources>
