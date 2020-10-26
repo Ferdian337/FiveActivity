@@ -3,11 +3,14 @@ package com.agung.fiveactivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import java.net.HttpCookie;
 import java.util.Arrays;
 
 public class checkOut extends AppCompatActivity {
@@ -22,6 +25,7 @@ public class checkOut extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_out);
+
 
         TextView jumlah1 = findViewById(R.id.jumlah1);
         TextView jumlah2 = findViewById(R.id.jumlah2);
@@ -59,5 +63,11 @@ public class checkOut extends AppCompatActivity {
         barang5.setText(label[4]);
         jumlah5.setText(nilai[4]);
 
+    }
+
+    public void checkout(View view) {
+        Uri uri = Uri.parse("http://www.google.com"); // ga ada 'http://' akan crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 }
