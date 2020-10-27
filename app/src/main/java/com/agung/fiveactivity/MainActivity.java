@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DaftarBarang.class);
         startActivity(intent);
     }
+
+    public void LaunchKelompokActivity(View view) {
+        Intent intent = new Intent(this, KelompokActivity.class);
+        startActivity(intent);
+    }
 }
